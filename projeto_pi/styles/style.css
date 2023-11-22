@@ -1,8 +1,9 @@
 /*geral*/
 
-body { /*#5B8BDF*/
-    background-color:  ;
+/*body { #5B8BDF
+    background-color: ;
 }
+*/
 
 * {
     margin: 0;
@@ -50,23 +51,22 @@ p {
 
 /*texto main*/
 
-h1 {
+#title {
     font-size: 50px;
-    color: black;
+    color: #5B8BDF;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .main-banner p {
     font-size: 25px;
     color: black;
-    text-align: left;
+    text-align: justify;
     margin-left: 90px;
 }
 
 .main-banner {
     width: 60%;
-    background-color: ;
     background-size: cover;
     padding: 5rem 0;
 }
@@ -80,7 +80,7 @@ h1 {
 
 .movable-image {
     position: absolute; /* Define a imagem como posição absoluta */
-    top: -490px; /* Posição inicial do topo */
+    top: -550px; /* Posição inicial do topo */
     right: -300px; /* Posição inicial da esquerda */
     width: 50%; /* Largura da imagem */
     height: auto; /* Altura automática para manter a proporção */
@@ -157,6 +157,12 @@ h1 {
 .cabecalho p {
     color: black;
 }
+
+/*estilização login*/
+
+.container-login{
+    margin-top: 100px;
+  }
 
 /*estilização formulário*/
 
