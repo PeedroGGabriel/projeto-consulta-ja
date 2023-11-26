@@ -5,15 +5,8 @@
 }
 */
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica;
-    box-sizing: border-box;
-}
-
 h3 {
-  color: #333; 
+  color: pink; 
 }
 
 p {
@@ -30,10 +23,12 @@ p {
 }
 
 .nav-item{
-    margin-top: 20px;   
+    margin-top: 20px;  
+    font-size: 15px; 
 }
 
 .nav-link{
+    font-family: Gill Sans MT;
     color: white;
 }
 
@@ -49,23 +44,31 @@ p {
     margin-right: 950px;
 }
 
+/*banner*/
+
+.banner-inicio {
+    margin-top: 85px;
+}
+
 /*texto main*/
 
 #title {
+    font-family: Gill Sans MT;
     font-size: 50px;
     color: #5B8BDF;
     text-align: center;
     margin-top: 100px;
 }
 
-.main-banner p {
-    font-size: 25px;
+.main-txt p {
+    font-family: Gill Sans MT;
+    font-size: 28px;
     color: black;
     text-align: justify;
     margin-left: 90px;
 }
 
-.main-banner {
+.main-txt {
     width: 60%;
     background-size: cover;
     padding: 5rem 0;
@@ -80,8 +83,8 @@ p {
 
 .movable-image {
     position: absolute; /* Define a imagem como posição absoluta */
-    top: -550px; /* Posição inicial do topo */
-    right: -300px; /* Posição inicial da esquerda */
+    top: -50px; /* Posição inicial do topo */
+    right: -608px; /* Posição inicial da esquerda */
     width: 50%; /* Largura da imagem */
     height: auto; /* Altura automática para manter a proporção */
     transition: all 0.3s ease; /* Adiciona uma transição suave */
@@ -91,40 +94,7 @@ p {
     transform: scale(1.2); /* Aumenta o tamanho da imagem quando o mouse passa por cima */
 }
 
-/*servicos*/
-
-.services-container {
-    background-color: white;
-    padding: 10rem 0;
-    
-}
-
-.services-container ul {
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.services-container li {
-    flex: 1 1 200px;
-    list-style: none;
-    text-align: center;
-    padding: 20px;
-}
-
-.fas {
-    font-size: 60px;
-    margin-bottom: 15px;
-}
-
-.services-container h3 {
-    margin-bottom: 25px;
-}
-
-.services-container p {
-    color: black;
-    line-height: 30px;
-}
+/* card */
 
 .container-card {
     background-color: #5B8BDF;
@@ -133,7 +103,8 @@ p {
 }
 
 .card {
-    background-color: #004AAD;
+    background-color:#004AAD;
+    border-radius: 20px;
 }
 
 .col-md-4 {
@@ -141,58 +112,180 @@ p {
 }
 
 .card-title {
+    font-family: Gill Sans MT;
+    font-weight: bold;
     color: white;
 }
 .card-text {
+    font-family: Gill Sans MT;
+    font-size: 20px;
+    text-align: justify;
     color: white;
 }
 
-.cabecalho {
-    background-color: #5B8BDF ;
-    text-align: center;
-    font-weight: bold;
-    margin: 50px 0 -20px;
+.card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.cabecalho p {
-    color: black;
+.btn {
+    font-size: 20px;
+    font-family: Gill Sans MT;
+    background-color: #5B8BDF;
+    border-color: #5B8BDF;
 }
 
-/*estilização login*/
+/*servicos*/
 
-.container-login{
-    margin-top: 100px;
-  }
-
-/*estilização formulário*/
-
-/** {
-    margin: 0;
-    padding: 0;
-    font-family:Helvetica;
+.services-container {
+    padding: 10rem 0;
 }
 
-body {
-    background-color: #B0E0E6;
-}
-*/
-
-h1, h2, h3, h4, h5 {
-    color: #333;
-}
-
-h1 {
-    text-align: center;
+.services-container ul {
+    display: flex;
+    width: 100%;
     margin: 0 auto;
 }
 
+.text-serv {
+    list-style: none;
+    padding: 20px;
+}
+
+.text-serv p {
+    font-family: Gill Sans MT;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.title-serv {
+    font-family: Gill Sans MT;
+    color: #5B8BDF;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.services-container p {
+    color: black;
+    line-height: 30px;
+}
+
+/* Estilos para o rodapé */
+.rodape {
+    background-color: #5B8BDF;
+    padding: 30px 0;
+}
+  
+.container-rdp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+.info, .redes-sociais {
+    flex: 1;
+    margin-right: 10px;
+}
+  
+.info h3, .redes-sociais h3 {
+    font-family: Gill Sans MT;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+  
+.redes-sociais ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.redes-sociais ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+  
+.redes-sociais ul li a {
+    text-decoration: none;
+    font-family: Gills Sans MT;
+    font-size: 14px;
+    color: white;
+}
+  
+/* Estilização extra (opcional) */
+.info p {
+    font-family: Gills Sans MT;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+    
+}
+  
+.info p:last-child {
+    margin-bottom: 0;
+}
+  
+.direitos {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: -40px;
+}
+  
+.direitos p {
+    font-family: Gills Sans MT;
+    font-size: 13px;
+    color: white;
+}
+  
+/*estilização login*/
+
+#img-log { 
+    margin: auto;
+    display: block;
+    width: 50%;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+
+.container-login{
+    margin-top: 100px;
+    margin-bottom: 215px;
+}
+
+.container-login h2 {
+    color: #5B8BDF;
+    font-family: gill sans mt;
+}
+
+.form-group label {
+    color: #5B8BDF;
+    font-family: Gill Sans MT;
+}
+
+.btn {
+    font-family: Gill Sans MT;
+    background-color: #5B8BDF;
+}
+
+.mt-3 {
+    color: black;
+}
+/*estilização formulário*/
+
 p, label {
-   color: #444;
+    font-size: 20px;
+    font-family: Gill Sans MT;
+    color: #5B8BDF;
 }
 
 input {
+    border-radius: 10px;
     border: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #5B8BDF;
     padding: 10px 0;
     
 }
@@ -201,6 +294,7 @@ input[type="text"],
 input[type="number"], 
 input[type="date"],
 input[type="file"],
+
 textarea {
     width: 400px;
 }
@@ -210,38 +304,22 @@ textarea {
 
 }
 
-/* page header */
-.header {
-    height: 160px;
-    padding: 20px;
-    background-color:#1E90FF;
-}
-
-.header h3 {
-    color: #fff;
-    margin-top: 0;
-}
-
 /* form container */
+
 .form-container {
-    background-color: #fdfdfd;
-    width: 60%;
+    background-color: rgb(244, 244, 244) ;
+    width: 45%;
     margin: 0 auto;
     position: relative;
-    top: -62px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    border-radius: 20px;
 }
 
 /* form header */
 
 .form-header {
-    border-bottom: 1px solid #dfdfdf;
-    height: 45px;
-}
-
-.form-header {
-    color: #673ab7;
-    border-bottom: 2px solid #1E90FF;
-    width: 100px;
+    font-weight: bold;
     text-align: center;
     margin: 0 auto;
     text-transform: uppercase;
@@ -249,14 +327,14 @@ textarea {
     line-height: 45px;
 }
 
+.form-header p{
+    font-family: Gill Sans MT;
+    font-size: 25px;
+}
 /* form body */
 
 .form-body {
     padding: 30px;
-}
-
-.form-title {
-    margin-bottom: 15px;
 }
 
 .form-body p {
@@ -264,7 +342,7 @@ textarea {
 }
 
 .required-field {
-    color: #d80835
+    color: red;
 }
 
 .box-input {
@@ -305,3 +383,38 @@ textarea {
     border-color: #1E90FF;
     color:#1E90FF;
 }
+
+
+/* Estilos para a página "Sobre Nós" */
+.container-sobre {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.container-sobre p {
+    font-family: Gill Sans MT;
+    font-size: 25px;
+    color: black;
+}
+  
+.sobre-nos {
+    padding: 50px 0;
+}
+  
+h1, h2 {
+    font-weight: bold;
+    font-family: Gill Sans MT;
+    color: #0066cc;
+}
+  
+ul {
+    font-size: 25px;
+    font-family: Gill Sans MT;
+    list-style-type: none;
+    padding-left: 0;
+}
+  
+
+  
